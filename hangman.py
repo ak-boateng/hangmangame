@@ -34,7 +34,7 @@ while turns > 0:
     failed = 0
 
     # for every character in secret_word
-    for char in word:
+    for char in word.lower():
 
         # see if the character is in the players guess
         if char in guesses:
@@ -64,7 +64,7 @@ while turns > 0:
     guesses += guess
 
     # if the guess is not found in the secret word
-    if guess not in word:
+    if guess not in word.lower():
 
         # turns counter decreases with 1 (now 9)
         turns -= 1
